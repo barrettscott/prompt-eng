@@ -2,6 +2,8 @@
 
 Welcome! This is the companion repository for the **Prompt Engineering with Python & OpenAI API** course on YouTube. All course notebooks live here — follow the setup steps below and you'll be ready to code along with the videos.
 
+> 🎬 **Watch the course on YouTube:** _TODO: add YouTube playlist link_
+
 <br>
 
 ## What We're Setting Up

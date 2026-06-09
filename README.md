@@ -1,8 +1,6 @@
 # Prompt Engineering Course Setup Guide
 
-<br>
-
-![Download from Resources tab](images/course-setup-link.png)
+Welcome! This is the companion repository for the **Prompt Engineering with Python & OpenAI API** course on YouTube. All course notebooks live here — follow the setup steps below and you'll be ready to code along with the videos.
 
 <br>
 
@@ -53,19 +51,13 @@ Before we start, here's what we'll install:
 
 <br>
 
-## Step 2: Download Course Materials
+## Step 2: Get the Course Materials
 
-Download `prompt-eng.zip` from the Resources tab:
+You have two options for getting the course files. **Option A (git clone) is recommended** — it makes it trivial to pull updates as the course evolves.
 
-![Download from Resources tab](images/download-resources-pe.png)
+### Option A: Clone with Git (Recommended)
 
-<br>
-
-Run the commands below to create a `courses` folder and extract the course files into this folder:
-
-![Terminal commands to unzip files](images/dir_path.png)
-
-<br>
+If you already have Git installed, run these commands:
 
 **🍎 macOS & 🐧 Linux**:
 ```bash
@@ -73,7 +65,7 @@ mkdir -p ~/courses
 
 cd ~/courses
 
-unzip ~/Downloads/prompt-eng.zip
+git clone https://github.com/barrettscott/prompt-eng.git
 
 cd prompt-eng
 ```
@@ -86,9 +78,30 @@ mkdir -Force courses
 
 cd courses
 
-Expand-Archive -Path "$env:USERPROFILE\Downloads\prompt-eng.zip" -DestinationPath . -Force
+git clone https://github.com/barrettscott/prompt-eng.git
 
 cd prompt-eng
+```
+
+> Don't have Git? Install it from [git-scm.com/downloads](https://git-scm.com/downloads), or use **Option B** below.
+
+### Option B: Download as ZIP
+
+1. Go to <https://github.com/barrettscott/prompt-eng>
+2. Click the green **Code** button → **Download ZIP**
+3. Move the ZIP into a `courses` folder in your home directory and extract it
+4. Rename the extracted folder from `prompt-eng-main` to `prompt-eng`
+
+Then in your terminal:
+
+**🍎 macOS & 🐧 Linux**:
+```bash
+cd ~/courses/prompt-eng
+```
+
+**🪟 Windows**:
+```powershell
+cd "$env:USERPROFILE\courses\prompt-eng"
 ```
 
 <br>

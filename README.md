@@ -16,16 +16,6 @@ Before we start, here's what we'll install:
   
 <br>
 
-## System Requirements
-
-- 🍎 **macOS**: 12.1+ for Apple Silicon; Intel Macs can use the last available Intel installer
-- 🪟 **Windows**: 10 version 1809+ (October 2018 Update) or later
-- 🐧 **Linux**: Ubuntu 20.04+, Red Hat/AlmaLinux/Rocky Linux 8+, or equivalent
-- **Disk Space**: 2GB free
-- **Internet**: Required for downloads
-
-<br>
-
 ## Before You Begin
 
 **Important**: Follow these steps in order! Each step depends on the previous one.

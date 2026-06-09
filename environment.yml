@@ -1,0 +1,53 @@
+# Prompt Engineering with OpenAI - Course Environment
+# 
+# This file creates an isolated conda environment with all packages needed
+# for the course notebooks.
+#
+# Setup:
+#   conda env create -f environment.yml
+#   conda activate prompt-eng
+#
+# Update (if needed):
+#   conda env update -f environment.yml --prune
+#
+# What's included:
+#   • Python 3.11 (supported through October 2027)
+#   • JupyterLab for interactive notebooks
+#   • OpenAI Python SDK for API calls
+#   • Token counting and cost estimation tools
+#   • Secure API key management
+#   • Material Darker theme for JupyterLab
+#
+# Note: You'll create your .env file with your OpenAI API key in Module 1B
+name: prompt-eng
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # ----- Core Python and Jupyter -----
+  - python=3.11.*     # Course tested on Python 3.11.x
+  - jupyterlab>=4.0   # Interactive notebook interface
+  - ipykernel         # Python kernel for Jupyter
+  - pip               # Package installer for pip-only packages
+  
+  # ----- Python packages via pip -----
+  - pip:
+      # OpenAI Python SDK (all modules)
+      - openai>=1.0.0,<2.0.0
+      
+      # JSON validation and structured outputs (Module 3)
+      - pydantic>=2.0.0,<3.0.0
+      
+      # Secure API key management (Module 1)
+      - python-dotenv>=1.0.0
+      
+      # HTTP requests and API testing (various modules)
+      - requests>=2.31.0
+      
+      # Token counting and cost estimation (Module 5)
+      - tiktoken>=0.6.0
+      
+      # JupyterLab Material Darker theme
+      - jupyterlab-materialdarker
+
+      

@@ -59,6 +59,10 @@ You have two options for getting the course files. **Option A (git clone) is rec
 
 If you already have Git installed, run these commands:
 
+![Terminal commands](images/dir_path.png)
+
+<br>
+
 **🍎 macOS & 🐧 Linux**:
 ```bash
 mkdir -p ~/courses
